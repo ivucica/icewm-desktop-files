@@ -128,7 +128,7 @@ def icewm_apps(directory_file_or_category=None):
     
     list.sort(apps, key=methodcaller('getName'))
     for app in apps:
-        print 'prog "%s" "%s" %s' % (app.getName(), app.getIcon(), app.getExec())
+        print 'prog "%s" "%s" %s' % (app.getName(), app.getIcon(), app.getExec().replace("%U", ""))
 
 if len(sys.argv) > 1:
     icewm_apps(sys.argv[1])
