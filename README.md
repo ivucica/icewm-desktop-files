@@ -6,6 +6,10 @@ Parses [FreeDesktop.org .desktop and .directory][3] entries, trying to
 have a very basic compliance with the [menu][2] spec. Uses [pyxdg][1]
 for parsing.
 
+Worked on under Ubuntu, on which it depends on `python-xdg`.
+
+    sudo apt-get install python-xdg
+
 ## Usage
 
 Use by adding the following to e.g. `${HOME}/.icewm/menu`, or perhaps to
